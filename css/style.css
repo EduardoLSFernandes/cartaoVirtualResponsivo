@@ -1,0 +1,306 @@
+body {
+    background-color: #FEF7FF;
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p {
+    font-size: 35px;
+}
+
+p:hover {
+    opacity: 0.8;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h1:hover {
+    opacity: 0.8;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: stretch;
+}
+
+.texto:hover {
+    opacity: 0.8;
+}
+
+.retangulo1 {
+    top: 282px;
+    left: 141px;
+    width: 629px;
+    height: 63px;
+    background: #4C7DE0 0% 0% no-repeat padding-box;
+    border-radius: 32px;
+    opacity: 0.27;
+    margin-top: -83px;
+    animation: pulse 2s infinite;
+}
+
+.retangulo1:hover {
+    opacity: 0.2;
+    animation: pulse 2s infinite;
+}
+
+.button {
+    background-color: #4C7DE0;
+    border: none;
+    border-radius: 32px;
+    color: white;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    animation: pulse 2s infinite;
+}
+
+.bg {
+    background: transparent url('img\backgroud.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.bg:hover {
+    opacity: 0.8;
+}
+
+
+/*ANIMACAO*/
+
+@keyframes pulse {
+    0%,
+    100% {
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+
+/*RESPONSIVO*/
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: max-content;
+    }
+    .principal {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    p {
+        font-size: 35px;
+    }
+    h1 {
+        font-size: 55px;
+    }
+    .texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-self: stretch;
+    }
+    .texto-principal {
+        margin-bottom: 70px;
+    }
+    .texto-corpo {
+        margin-bottom: 70px;
+    }
+    .retangulo1 {
+        top: 282px;
+        left: 141px;
+        width: 629px;
+        height: 63px;
+        background: #4C7DE0 0% 0% no-repeat padding-box;
+        border-radius: 32px;
+        opacity: 0.27;
+        margin-top: -83px;
+        animation: pulse 2s infinite;
+    }
+    .retangulo1:hover {
+        opacity: 0.2;
+        animation: pulse 2s infinite;
+    }
+    .button {
+        background-color: #4C7DE0;
+        border: none;
+        border-radius: 32px;
+        color: white;
+        padding: 20px;
+        width: 600px;
+        height: 100px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 30px;
+        margin: 8px 4px;
+    }
+    .button:hover {
+        animation: none;
+    }
+    .bg img {
+        height: 540px;
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 1660px) {
+    body {
+        width: max-content;
+        margin: auto;
+    }
+    .principal {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        height: 890px;
+    }
+    p {
+        font-size: 35px;
+    }
+    h1 {
+        font-size: 55px;
+    }
+    .texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-self: stretch;
+    }
+    .texto-principal {
+        margin-bottom: 70px;
+    }
+    .texto-corpo {
+        margin-bottom: 70px;
+    }
+    .retangulo1 {
+        top: 282px;
+        left: 141px;
+        width: 629px;
+        height: 63px;
+        background: #4C7DE0 0% 0% no-repeat padding-box;
+        border-radius: 32px;
+        opacity: 0.27;
+        margin-top: -83px;
+        animation: pulse 2s infinite;
+    }
+    .retangulo1:hover {
+        opacity: 0.2;
+        animation: pulse 2s infinite;
+    }
+    .button {
+        background-color: #4C7DE0;
+        border: none;
+        border-radius: 32px;
+        color: white;
+        padding: 20px;
+        width: 500px;
+        height: 100px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 30px;
+        margin: 8px 4px;
+    }
+    .button:hover {
+        animation: none;
+    }
+    .bg img {
+        height: 270px;
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    body {
+        width: max-content;
+    }
+    .principal {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    p {
+        font-size: 25px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-self: stretch;
+    }
+    .texto-principal {
+        margin-bottom: 70px;
+    }
+    .texto-corpo {
+        margin-bottom: 70px;
+    }
+    .retangulo1 {
+        top: 282px;
+        left: 141px;
+        width: 429px;
+        height: 63px;
+        background: #4C7DE0 0% 0% no-repeat padding-box;
+        border-radius: 32px;
+        opacity: 0.27;
+        margin-top: -45px;
+        animation: pulse 2s infinite;
+    }
+    .retangulo1:hover {
+        opacity: 0.2;
+        animation: pulse 2s infinite;
+    }
+    .button {
+        background-color: #4C7DE0;
+        border: none;
+        border-radius: 32px;
+        color: white;
+        padding: 20px;
+        width: 400px;
+        height: 100px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 30px;
+        margin: 8px 4px;
+    }
+    .button:hover {
+        animation: none;
+    }
+    .bg img {
+        height: 270px;
+        width: 300px;
+    }
+}
